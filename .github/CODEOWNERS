@@ -1,1 +1,23 @@
-@username @collaborateUsername
+# Code ownership hierarchy for Hive DB libraries
+# James Gober is the primary owner, Brittany is top-level, Matt has dev access
+
+# Global ownership - primary owner always included
+* @jamesgober @brittanygober
+
+# Critical configuration files - Primary + Top-level only
+Cargo.toml @jamesgober @brittanygober
+.github/ @jamesgober @brittanygober
+LICENSE @jamesgober @brittanygober
+README.md @jamesgober @brittanygober
+
+# Source code - All team members can review
+/src/ @jamesgober @brittanygober @callamane
+*.rs @jamesgober @brittanygober @callamane
+
+# Documentation - All team members
+/docs/ @jamesgober @brittanygober @callamane
+*.md @jamesgober @brittanygober @callamane
+
+# Development utilities - Matt can help with dev tools
+/dev/ @jamesgober @brittanygober @callamane
+/tests/ @jamesgober @brittanygober @callamane
